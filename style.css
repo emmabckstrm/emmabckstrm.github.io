@@ -1,0 +1,85 @@
+
+@import 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed';
+
+body, html { 
+	width: 100%;
+	height: 100%;
+	font-size: 11pt;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.container-fluid, .indx-row {
+	height: 100%;
+	overflow: hidden;
+}
+.indx-row {
+	position: relative;
+	text-align: center;
+}
+.indx-row .col-md-12 {
+	height: 100%;
+}
+.indx-left {
+	text-align: right;
+}
+.indx-right {
+}
+
+.indx-right::before {
+	content: '';
+	width: 150%;
+	height: 150%;
+	background: #F0C900;
+	position: absolute;
+	top: -10%;
+	left: 0;
+	-ms-transform: rotate(22deg); /* IE 9 */
+    -webkit-transform: rotate(22deg); /* Chrome, Safari, Opera */
+    transform: rotate(22deg);
+}
+
+.inner-cont:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+.inner-cont {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	height: 100%;
+}
+.inner-cont div.inner-inner {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 250px;
+	text-align: center;
+}
+
+#profile-img {
+	width: 250px;
+	height: 250px;
+	margin-right: 50px;
+	vertical-align: middle;
+	background: url('images/emma2.jpg');
+	background-position: center center;
+	background-size: cover;
+	-webkit-border-radius: 250px;
+	-moz-border-radius: 250px;
+	border-radius: 250px;
+}
+img {
+	max-width: 250px;
+}
+
+
+.hello {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+
+}
+p.text {
+	text-align: justify;
+}
+.ion-social-linkedin { font-size: 1.5em;}
